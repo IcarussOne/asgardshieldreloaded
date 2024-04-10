@@ -137,7 +137,7 @@ public class ASRConfig
 
         @Config.Name("Gilded Iron Shield: Max Use Duration")
         public int GILDED_IRON_SHIELD_MAXUSEDURATION = 200;
-        
+
         @Config.Name("Golden Shield: Durability")
         public int GOLDEN_SHIELD_DURABILITY = 121;
 
@@ -225,7 +225,7 @@ public class ASRConfig
         @Config.Comment("Only effective when 'Vanilla Shield Override' is enabled")
         public int VANILLA_SHIELD_MAXUSEDURATION = 200;
     }
-    
+
     public static class CategoryMisc
     {
         @Config.Name("Blocking Sound")

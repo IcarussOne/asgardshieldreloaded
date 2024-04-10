@@ -144,7 +144,7 @@ public class EventHandler
                     {
                         case AsgardShieldReloaded.NAMESPACE + "wooden_shield":
                             knockback = 1.0F;
-                        	player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_DOOR_WOOD, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_DOOR_WOOD, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             if (source.isFireDamage())
                             {
                                 cancel = false;
@@ -163,7 +163,7 @@ public class EventHandler
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "gilded_wooden_shield":
                             knockback = 1.5F;
-                        	player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_DOOR_WOOD, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_DOOR_WOOD, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             if (source.isFireDamage())
                             {
                                 cancel = false;
@@ -215,10 +215,10 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "golden_shield":
-                        	if (RandomUtil.chance(0.2D) && player.shouldHeal() && enemy instanceof EntityLiving)
+                            if (RandomUtil.chance(0.2D) && player.shouldHeal() && enemy instanceof EntityLiving)
                             {
-                        		// TODO: Spawn particles when player is healed
-                        		// Half a heart + 4% of the attacker's max health
+                                // TODO: Spawn particles when player is healed
+                                // Half a heart + 4% of the attacker's max health
                                 player.heal(1 + ((EntityLivingBase) enemy).getMaxHealth() * 0.04F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                                 break;
@@ -227,10 +227,10 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "blessed_golden_shield":
-                        	if (RandomUtil.chance(0.3D) && player.shouldHeal() && enemy instanceof EntityLiving)
+                            if (RandomUtil.chance(0.3D) && player.shouldHeal() && enemy instanceof EntityLiving)
                             {
-                        		// TODO: Spawn particles when player is healed
-                        		// Half a heart + 5% of the attacker's max health
+                                // TODO: Spawn particles when player is healed
+                                // Half a heart + 5% of the attacker's max health
                                 player.heal(1 + ((EntityLivingBase) enemy).getMaxHealth() * 0.05F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                                 break;
@@ -397,7 +397,7 @@ public class EventHandler
             }
         }
     }
-    
+
     // TODO: Break particles for when shields are hit or used
     public static void breakFx(World world, EntityPlayer player, ItemStack stack)
     {
@@ -411,9 +411,9 @@ public class EventHandler
             vec3d1 = vec3d1.rotatePitch(-player.rotationPitch * 0.017453292F);
             vec3d1 = vec3d1.rotateYaw(-player.rotationYaw * 0.017453292F);
             vec3d1 = vec3d1.add(player.posX, player.posY + player.getEyeHeight(), player.posZ);
-            if (world instanceof WorldServer) ((WorldServer)world).spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
+            if (world instanceof WorldServer) world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
             else
-            	world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
+                world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
         }
     }
 
@@ -463,13 +463,13 @@ public class EventHandler
             projectile.motionZ /= -0.10000000149011612D;
         }
     }
-    
+
     public static void skullFx(World world, BlockPos pos)
     {
-    	double xCoord = pos.getX();
-    	double yCoord = pos.getY() + 1.0D;
-    	double zCoord = pos.getZ();
-    	world.spawnParticle(EnumParticleTypes.CLOUD, xCoord, yCoord, zCoord, 0.0D, 0.0D, 0.0D);
+        double xCoord = pos.getX();
+        double yCoord = pos.getY() + 1.0D;
+        double zCoord = pos.getZ();
+        world.spawnParticle(EnumParticleTypes.CLOUD, xCoord, yCoord, zCoord, 0.0D, 0.0D, 0.0D);
     }
 
     public static float teleportEnemy(Entity enemy, float knockback)
