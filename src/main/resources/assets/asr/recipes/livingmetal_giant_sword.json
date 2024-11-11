@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "harkenscythe"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " LL",
+    "LLL",
+    "SL "
+  ],
+  "key": {
+    "L": {
+      "item": "harkenscythe:livingmetal_ingot"
+    },
+    "S": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "asr:livingmetal_giant_sword",
+    "count": 1
+  }
+}

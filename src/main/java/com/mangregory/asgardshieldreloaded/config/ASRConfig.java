@@ -98,6 +98,24 @@ public class ASRConfig
 
         @Config.Name("Ender Giant Sword: Max Use Duration")
         public int ENDER_GIANT_SWORD_MAXUSEDURATION = 100;
+
+        @Config.Name("Biomass Giant Sword: Durability")
+        public int BIOMASS_GIANT_SWORD_DURABILITY = 225;
+
+        @Config.Name("Biomass Giant Sword: Damage")
+        public double BIOMASS_GIANT_SWORD_DAMAGE = 6.0D;
+
+        @Config.Name("Biomass Giant Sword: Max Use Duration")
+        public int BIOMASS_GIANT_SWORD_MAXUSEDURATION = 100;
+
+        @Config.Name("Livingmetal Giant Sword: Durability")
+        public int LIVINGMETAL_GIANT_SWORD_DURABILITY = 375;
+
+        @Config.Name("Livingmetal Giant Sword: Damage")
+        public double LIVINGMETAL_GIANT_SWORD_DAMAGE = 6.0D;
+
+        @Config.Name("Livingmetal Giant Sword: Max Use Duration")
+        public int LIVINGMETAL_GIANT_SWORD_MAXUSEDURATION = 100;
     }
 
     public static class CategoryShields
@@ -209,6 +227,30 @@ public class ASRConfig
 
         @Config.Name("Gilded Ender Shield: Max Use Duration")
         public int GILDED_ENDER_SHIELD_MAXUSEDURATION = 200;
+
+        @Config.Name("Biomass Shield: Durability")
+        public int BIOMASS_SHIELD_DURABILITY = 150;
+
+        @Config.Name("Biomass Shield: Max Use Duration")
+        public int BIOMASS_SHIELD_MAXUSEDURATION = 200;
+
+        @Config.Name("Gilded Biomass Shield: Durability")
+        public int GILDED_BIOMASS_SHIELD_DURABILITY = 227;
+
+        @Config.Name("Gilded Biomass Shield: Max Use Duration")
+        public int GILDED_BIOMASS_SHIELD_MAXUSEDURATION = 200;
+
+        @Config.Name("Livingmetal Shield: Durability")
+        public int LIVINGMETAL_SHIELD_DURABILITY = 250;
+
+        @Config.Name("Livingmetal Shield: Max Use Duration")
+        public int LIVINGMETAL_SHIELD_MAXUSEDURATION = 200;
+
+        @Config.Name("Gilded Livingmetal Shield: Durability")
+        public int GILDED_LIVINGMETAL_SHIELD_DURABILITY = 378;
+
+        @Config.Name("Gilded Livingmetal Shield: Max Use Duration")
+        public int GILDED_LIVINGMETAL_SHIELD_MAXUSEDURATION = 200;
     }
 
     public static class CategoryVanillaShield

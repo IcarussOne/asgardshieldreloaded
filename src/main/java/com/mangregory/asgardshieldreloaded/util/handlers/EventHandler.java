@@ -34,6 +34,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import com.mangregory.asgardshieldreloaded.AsgardShieldReloaded;
 import com.mangregory.asgardshieldreloaded.init.ModItems;
@@ -348,6 +349,34 @@ public class EventHandler
                             else knockback = 2.0F;
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ENDERDRAGON_HURT, SoundCategory.PLAYERS, 0.8F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
+                        case AsgardShieldReloaded.NAMESPACE + "biomass_shield":
+                            if (RandomUtil.chance(0.1D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_blood") || handleEssenceContainer(player, "harkenscythe:essence_vessel_blood")))
+                            {
+                                if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 200, 4));
+                            }
+                            knockback = 1.0F;
+                            break;
+                        case AsgardShieldReloaded.NAMESPACE + "gilded_biomass_shield":
+                            if (RandomUtil.chance(0.2D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_blood") || handleEssenceContainer(player, "harkenscythe:essence_vessel_blood")))
+                            {
+                                if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 300, 4));
+                            }
+                            knockback = 1.5F;
+                            break;
+                        case AsgardShieldReloaded.NAMESPACE + "livingmetal_shield":
+                            if (RandomUtil.chance(0.1D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_soul") || handleEssenceContainer(player, "harkenscythe:essence_vessel_soul")))
+                            {
+                                if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 200, 4));
+                            }
+                            knockback = 1.0F;
+                            break;
+                        case AsgardShieldReloaded.NAMESPACE + "gilded_livingmetal_shield":
+                            if (RandomUtil.chance(0.2D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_soul") || handleEssenceContainer(player, "harkenscythe:essence_vessel_soul")))
+                            {
+                                if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 300, 4));
+                            }
+                            knockback = 1.5F;
+                            break;
                     }
                     if (cancel)
                     {
@@ -368,6 +397,7 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_NOTE_HAT, SoundCategory.PLAYERS, 1.2F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "iron_giant_sword":
+                        case AsgardShieldReloaded.NAMESPACE + "livingmetal_giant_sword":
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "golden_giant_sword":
@@ -380,6 +410,7 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_NOTE_XYLOPHONE, SoundCategory.PLAYERS, 1.2F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "patchwork_giant_sword":
+                        case AsgardShieldReloaded.NAMESPACE + "biomass_giant_sword":
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_STEP, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "skull_giant_sword":
@@ -412,8 +443,7 @@ public class EventHandler
             vec3d1 = vec3d1.rotateYaw(-player.rotationYaw * 0.017453292F);
             vec3d1 = vec3d1.add(player.posX, player.posY + player.getEyeHeight(), player.posZ);
             if (world instanceof WorldServer) world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
-            else
-                world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
+            else world.spawnParticle(EnumParticleTypes.ITEM_CRACK, vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z, Item.getIdFromItem(stack.getItem()), stack.getMetadata());
         }
     }
 
@@ -485,5 +515,36 @@ public class EventHandler
             return 0.0F;
         }
         return knockback;
+    }
+
+    public static boolean handleEssenceContainer(EntityPlayer player, String registryName)
+    {
+        for (int i = 0, size = player.inventory.getSizeInventory(); i < size; i++)
+        {
+            ItemStack stack = player.inventory.getStackInSlot(i);
+            String regName = stack.getItem().getRegistryName().toString();
+            if (regName.equals(registryName))
+            {
+                if (!player.capabilities.isCreativeMode)
+                {
+                    int itemDamage = stack.getItemDamage();
+                    if (itemDamage + 1 < stack.getMaxDamage())
+                    {
+                        stack.setItemDamage(itemDamage + 1);
+                    }
+                    else
+                    {
+                        stack.shrink(1);
+                        ResourceLocation newItem = regName.contains("keeper") ? new ResourceLocation("harkenscythe:essence_keeper") : new ResourceLocation("harkenscythe:essence_vessel");
+                        if (regName.contains("keeper") || regName.contains("vessel"))
+                        {
+                            player.inventory.setInventorySlotContents(i, new ItemStack(ForgeRegistries.ITEMS.getValue(newItem)));
+                        }
+                    }
+                }
+                return true;
+            }
+        }
+        return false;
     }
 }

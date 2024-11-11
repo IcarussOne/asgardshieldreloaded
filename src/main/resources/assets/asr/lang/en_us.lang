@@ -26,6 +26,12 @@ item.asr.gilded_stone_shield.name=Gilded Stone Shield
 item.asr.wooden_shield.name=Wooden Shield
 item.asr.gilded_wooden_shield.name=Gilded Wooden Shield
 
+item.asr.biomass_shield.name=Biomass Shield
+item.asr.gilded_biomass_shield.name=Gilded Biomass Shield
+
+item.asr.livingmetal_shield.name=Livingmetal Shield
+item.asr.gilded_livingmetal_shield.name=Gilded Livingmetal Shield
+
 # GIANT SWORDS
 item.asr.diamond_giant_sword.name=Diamond Giant Sword
 item.asr.ender_giant_sword.name=Ender Giant Sword
@@ -36,6 +42,8 @@ item.asr.patchwork_giant_sword.name=Patchwork Leg
 item.asr.skull_giant_sword.name=Skull Giant Sword
 item.asr.stone_giant_sword.name=Stone Giant Sword
 item.asr.wooden_giant_sword.name=Wooden Giant Sword
+item.asr.biomass_giant_sword.name=Biomass Giant Sword
+item.asr.livingmetal_giant_sword.name=Livingmetal Giant Sword
 
 # TOOLTIPS
 item.asr.diamond_shield.perk=Special Perk: Reflect
@@ -127,5 +135,25 @@ item.asr.gilded_wooden_shield.perk=Special Perk: Arrow Catch
 item.asr.gilded_wooden_shield.perk.desc=Allows the wielder to collect arrows from enemies (50 percent chance)
 item.asr.gilded_wooden_shield.weakness=Weakness: Fire Damage
 item.asr.gilded_wooden_shield.weakness.desc=Fire burns quickly through wood, be careful
+
+item.asr.biomass_shield.perk=Special Perk: Blood Matrix
+item.asr.biomass_shield.perk.desc=Grants the wielder 10 absorption hearts for 10 seconds (10 percent chance)
+item.asr.biomass_shield.weakness=Weakness: Blood Drinker
+item.asr.biomass_shield.weakness.desc=Blood essence is drawn from an essence container to provide health
+
+item.asr.gilded_biomass_shield.perk=Special Perk: Blood Matrix
+item.asr.gilded_biomass_shield.perk.desc=Grants the wielder 10 absorption hearts for 15 seconds (20 percent chance)
+item.asr.gilded_biomass_shield.weakness=Weakness: Blood Drinker
+item.asr.gilded_biomass_shield.weakness.desc=Blood essence is drawn from an essence container to provide health
+
+item.asr.livingmetal_shield.perk=Special Perk: Soul Matrix
+item.asr.livingmetal_shield.perk.desc=Grants the wielder 10 absorption hearts for 10 seconds (10 percent chance)
+item.asr.livingmetal_shield.weakness=Weakness: Soul Drinker
+item.asr.livingmetal_shield.weakness.desc=Soul essence is drawn from an essence container to provide health
+
+item.asr.gilded_livingmetal_shield.perk=Special Perk: Soul Matrix
+item.asr.gilded_livingmetal_shield.perk.desc=Grants the wielder 10 absorption hearts for 15 seconds (20 percent chance)
+item.asr.gilded_livingmetal_shield.weakness=Weakness: Soul Drinker
+item.asr.gilded_livingmetal_shield.weakness.desc=Soul essence is drawn from an essence container to provide health
 
 tooltip.asr.category.duration=Max Use Duration

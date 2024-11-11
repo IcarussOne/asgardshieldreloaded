@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "harkenscythe"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "III",
+    "ILI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "harkenscythe:livingmetal_ingot"
+    },
+    "L": {
+      "type": "forge:ore_dict",
+      "ore": "leather"
+    }
+  },
+  "result": {
+    "item": "asr:livingmetal_shield",
+    "count": 1
+  }
+}

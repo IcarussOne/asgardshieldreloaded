@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "harkenscythe"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " BB",
+    "BBB",
+    "SB "
+  ],
+  "key": {
+    "B": {
+      "item": "harkenscythe:biomass"
+    },
+    "S": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "asr:biomass_giant_sword",
+    "count": 1
+  }
+}

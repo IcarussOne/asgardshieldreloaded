@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "harkenscythe"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "BBB",
+    "BLB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "harkenscythe:biomass"
+    },
+    "L": {
+      "type": "forge:ore_dict",
+      "ore": "leather"
+    }
+  },
+  "result": {
+    "item": "asr:biomass_shield",
+    "count": 1
+  }
+}

@@ -5,6 +5,9 @@ item.asr.gilded_diamond_shield.name=Vergoldeter Diamantschild
 item.asr.ender_shield.name=Enderschild
 item.asr.gilded_ender_shield.name=Vergoldeter Enderschild
 
+item.asr.golden_shield.name=Goldener Schild
+item.asr.blessed_golden_shield.name=Gesegneter Goldener Schild
+
 item.asr.iron_shield.name=Eisenschild
 item.asr.gilded_iron_shield.name=Vergoldeter Eisenschild
 
@@ -23,6 +26,12 @@ item.asr.gilded_stone_shield.name=Vergoldeter Steinschild
 item.asr.wooden_shield.name=Holzschild
 item.asr.gilded_wooden_shield.name=Vergoldeter Holzschild
 
+item.asr.biomass_shield.name=Biomasseschild
+item.asr.gilded_biomass_shield.name=Vergoldeter Biomasseschild
+
+item.asr.livingmetal_shield.name=Lebendmetallschild
+item.asr.gilded_livingmetal_shield.name=Vergoldeter Lebendmetallschild
+
 # GIANT SWORDS
 item.asr.diamond_giant_sword.name=Diamantriesenschwert
 item.asr.ender_giant_sword.name=Enderriesenschwert
@@ -33,6 +42,8 @@ item.asr.patchwork_giant_sword.name=Patchworkriesenschwert
 item.asr.skull_giant_sword.name=Skelettschädelriesenschwert
 item.asr.stone_giant_sword.name=Steinriesenschwert
 item.asr.wooden_giant_sword.name=Holzriesenschwert
+item.asr.biomass_giant_sword.name=Biomasseriesenschwert
+item.asr.livingmetal_giant_sword.name=Lebendmetallriesenschwert
 
 # TOOLTIPS
 item.asr.diamond_shield.perk=Besonderer Vorteil: Reflektieren
@@ -54,6 +65,16 @@ item.asr.gilded_ender_shield.perk=Besonderer Vorteil: Enderverschiebung
 item.asr.gilded_ender_shield.perk.desc=Teleportiert Gegner vom Träger weg (40-Prozent-Chance)
 item.asr.gilded_ender_shield.weakness=Schwäche: Endtechnologie
 item.asr.gilded_ender_shield.weakness.desc=Enderbewohner können den Schutz umgehen
+
+item.asr.golden_shield.perk=Besonderer Vorteil: Paladinwache
+item.asr.golden_shield.perk.desc=Heilt den Träger um ein halbes Herz plus 4 Prozent der maximalen Gesundheit des Gegners (20-Prozent-Chance)
+item.asr.golden_shield.weakness=Schwäche: Paladinschwur
+item.asr.golden_shield.weakness.desc=Rückschlag gegen nicht untote Gegner wird halbiert
+
+item.asr.blessed_golden_shield.perk=Besonderer Vorteil: Paladinwache
+item.asr.blessed_golden_shield.perk.desc=Heilt den Träger um ein halbes Herz plus 5 Prozent der maximalen Gesundheit des Gegners (30-Prozent-Chance)
+item.asr.blessed_golden_shield.weakness=Schwäche: Paladinschwur
+item.asr.blessed_golden_shield.weakness.desc=Rückschlag gegen nicht untote Gegner wird halbiert
 
 item.asr.iron_shield.perk=Besonderer Vorteil: Unbewegliches Objekt
 item.asr.iron_shield.perk.desc=Erhält weniger Schaden durch Explosionsbeständigkeit (50-Prozent-Chance)
@@ -114,5 +135,25 @@ item.asr.gilded_wooden_shield.perk=Besonderer Vorteil: Pfeilfang
 item.asr.gilded_wooden_shield.perk.desc=Ermöglicht es dem Träger, Pfeile von Feinden einzusammeln
 item.asr.gilded_wooden_shield.weakness=Schwäche: Feuerschaden
 item.asr.gilded_wooden_shield.weakness.desc=Feuer brennt schnell durch Holz, sei vorsichtig
+
+item.asr.biomass_shield.perk=Besonderer Vorteil: Blutmatrix
+item.asr.biomass_shield.perk.desc=Gewährt dem Träger 10 Absorptionsherzen für 10 Sekunden (10-Prozent-Chance)
+item.asr.biomass_shield.weakness=Schwäche: Bluttrinker
+item.asr.biomass_shield.weakness.desc=Blutessenz wird einem Essenzbehälter entzogen, um Gesundheit zu spenden
+
+item.asr.gilded_biomass_shield.perk=Besonderer Vorteil: Blutmatrix
+item.asr.gilded_biomass_shield.perk.desc=Gewährt dem Träger 10 Absorptionsherzen für 15 Sekunden (20-Prozent-Chance)
+item.asr.gilded_biomass_shield.weakness=Schwäche: Bluttrinker
+item.asr.gilded_biomass_shield.weakness.desc=Blutessenz wird einem Essenzbehälter entzogen, um Gesundheit zu spenden
+
+item.asr.livingmetal_shield.perk=Besonderer Vorteil: Seelenmatrix
+item.asr.livingmetal_shield.perk.desc=Gewährt dem Träger 10 Absorptionsherzen für 10 Sekunden (10-Prozent-Chance)
+item.asr.livingmetal_shield.weakness=Schwäche: Seelentrinker
+item.asr.livingmetal_shield.weakness.desc=Seelenessenz wird einem Essenzbehälter entzogen, um Gesundheit zu spenden
+
+item.asr.gilded_livingmetal_shield.perk=Besonderer Vorteil: Seelenmatrix
+item.asr.gilded_livingmetal_shield.perk.desc=Gewährt dem Träger 10 Absorptionsherzen für 15 Sekunden (20-Prozent-Chance)
+item.asr.gilded_livingmetal_shield.weakness=Schwäche: Seelentrinker
+item.asr.gilded_livingmetal_shield.weakness.desc=Seelenessenz wird einem Essenzbehälter entzogen, um Gesundheit zu spenden
 
 tooltip.asr.category.duration=Maximale Nutzungsdauer

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "harkenscythe"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "GGG",
+    "GSG",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "S": {
+      "item": "asr:livingmetal_shield",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "asr:gilded_livingmetal_shield",
+    "count": 1
+  }
+}
