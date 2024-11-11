@@ -222,7 +222,6 @@ public class EventHandler
                                 // One heart + 8% of the attacker's max health
                                 player.heal(2 + ((EntityLivingBase) enemy).getMaxHealth() * 0.08F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
-                                break;
                             }
                             knockback = ((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD) ? 1.0F : 0.5F;
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
@@ -234,7 +233,6 @@ public class EventHandler
                                 // Two hearts + 12% of the attacker's max health
                                 player.heal(4 + ((EntityLivingBase) enemy).getMaxHealth() * 0.12F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
-                                break;
                             }
                             knockback = ((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD) ? 1.5F : 0.75F;
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
