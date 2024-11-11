@@ -219,8 +219,8 @@ public class EventHandler
                             if (RandomUtil.chance(0.2D) && player.shouldHeal() && enemy instanceof EntityLiving)
                             {
                                 // TODO: Spawn particles when player is healed
-                                // Half a heart + 4% of the attacker's max health
-                                player.heal(1 + ((EntityLivingBase) enemy).getMaxHealth() * 0.04F);
+                                // One heart + 8% of the attacker's max health
+                                player.heal(2 + ((EntityLivingBase) enemy).getMaxHealth() * 0.08F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                                 break;
                             }
@@ -231,8 +231,8 @@ public class EventHandler
                             if (RandomUtil.chance(0.3D) && player.shouldHeal() && enemy instanceof EntityLiving)
                             {
                                 // TODO: Spawn particles when player is healed
-                                // Half a heart + 5% of the attacker's max health
-                                player.heal(1 + ((EntityLivingBase) enemy).getMaxHealth() * 0.05F);
+                                // Two hearts + 12% of the attacker's max health
+                                player.heal(4 + ((EntityLivingBase) enemy).getMaxHealth() * 0.12F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                                 break;
                             }
@@ -355,6 +355,7 @@ public class EventHandler
                                 if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 200, 4));
                             }
                             knockback = 1.0F;
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_STEP, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "gilded_biomass_shield":
                             if (RandomUtil.chance(0.2D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_blood") || handleEssenceContainer(player, "harkenscythe:essence_vessel_blood")))
@@ -362,6 +363,7 @@ public class EventHandler
                                 if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 300, 4));
                             }
                             knockback = 1.5F;
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_STEP, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "livingmetal_shield":
                             if (RandomUtil.chance(0.1D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_soul") || handleEssenceContainer(player, "harkenscythe:essence_vessel_soul")))
@@ -369,6 +371,7 @@ public class EventHandler
                                 if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 200, 4));
                             }
                             knockback = 1.0F;
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "gilded_livingmetal_shield":
                             if (RandomUtil.chance(0.2D) && (handleEssenceContainer(player, "harkenscythe:essence_keeper_soul") || handleEssenceContainer(player, "harkenscythe:essence_vessel_soul")))
@@ -376,6 +379,7 @@ public class EventHandler
                                 if (!player.isPotionActive(MobEffects.ABSORPTION)) player.addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 300, 4));
                             }
                             knockback = 1.5F;
+                            player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                     }
                     if (cancel)

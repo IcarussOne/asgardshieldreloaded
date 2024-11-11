@@ -67,12 +67,12 @@ item.asr.gilded_ender_shield.weakness=Weakness: End Tech
 item.asr.gilded_ender_shield.weakness.desc=Ender folk can bypass the guard
 
 item.asr.golden_shield.perk=Special Perk: Paladin's Ward
-item.asr.golden_shield.perk.desc=Heals the wielder for half a heart plus 4 percent of the attacker's max health (20 percent chance)
+item.asr.golden_shield.perk.desc=Heals the wielder for one heart plus 8 percent of the attacker's max health (20 percent chance)
 item.asr.golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 
 item.asr.blessed_golden_shield.perk=Special Perk: Paladin's Ward
-item.asr.blessed_golden_shield.perk.desc=Heals the wielder for half a heart plus 5 percent of the attacker's max health (30 percent chance)
+item.asr.blessed_golden_shield.perk.desc=Heals the wielder for two hearts plus 12 percent of the attacker's max health (30 percent chance)
 item.asr.blessed_golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.blessed_golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 
@@ -148,12 +148,12 @@ item.asr.gilded_biomass_shield.weakness.desc=Blood essence is drawn from an esse
 
 item.asr.livingmetal_shield.perk=Special Perk: Soul Matrix
 item.asr.livingmetal_shield.perk.desc=Grants the wielder 10 absorption hearts for 10 seconds (10 percent chance)
-item.asr.livingmetal_shield.weakness=Weakness: Soul Drinker
+item.asr.livingmetal_shield.weakness=Weakness: Soul Eater
 item.asr.livingmetal_shield.weakness.desc=Soul essence is drawn from an essence container to provide health
 
 item.asr.gilded_livingmetal_shield.perk=Special Perk: Soul Matrix
 item.asr.gilded_livingmetal_shield.perk.desc=Grants the wielder 10 absorption hearts for 15 seconds (20 percent chance)
-item.asr.gilded_livingmetal_shield.weakness=Weakness: Soul Drinker
+item.asr.gilded_livingmetal_shield.weakness=Weakness: Soul Eater
 item.asr.gilded_livingmetal_shield.weakness.desc=Soul essence is drawn from an essence container to provide health
 
 tooltip.asr.category.duration=Max Use Duration

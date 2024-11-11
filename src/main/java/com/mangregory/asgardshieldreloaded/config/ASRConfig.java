@@ -109,7 +109,7 @@ public class ASRConfig
         public int BIOMASS_GIANT_SWORD_MAXUSEDURATION = 100;
 
         @Config.Name("Livingmetal Giant Sword: Durability")
-        public int LIVINGMETAL_GIANT_SWORD_DURABILITY = 375;
+        public int LIVINGMETAL_GIANT_SWORD_DURABILITY = 481;
 
         @Config.Name("Livingmetal Giant Sword: Damage")
         public double LIVINGMETAL_GIANT_SWORD_DAMAGE = 6.0D;
@@ -229,25 +229,25 @@ public class ASRConfig
         public int GILDED_ENDER_SHIELD_MAXUSEDURATION = 200;
 
         @Config.Name("Biomass Shield: Durability")
-        public int BIOMASS_SHIELD_DURABILITY = 150;
+        public int BIOMASS_SHIELD_DURABILITY = 481;
 
         @Config.Name("Biomass Shield: Max Use Duration")
         public int BIOMASS_SHIELD_MAXUSEDURATION = 200;
 
         @Config.Name("Gilded Biomass Shield: Durability")
-        public int GILDED_BIOMASS_SHIELD_DURABILITY = 227;
+        public int GILDED_BIOMASS_SHIELD_DURABILITY = 650;
 
         @Config.Name("Gilded Biomass Shield: Max Use Duration")
         public int GILDED_BIOMASS_SHIELD_MAXUSEDURATION = 200;
 
         @Config.Name("Livingmetal Shield: Durability")
-        public int LIVINGMETAL_SHIELD_DURABILITY = 250;
+        public int LIVINGMETAL_SHIELD_DURABILITY = 481;
 
         @Config.Name("Livingmetal Shield: Max Use Duration")
         public int LIVINGMETAL_SHIELD_MAXUSEDURATION = 200;
 
         @Config.Name("Gilded Livingmetal Shield: Durability")
-        public int GILDED_LIVINGMETAL_SHIELD_DURABILITY = 378;
+        public int GILDED_LIVINGMETAL_SHIELD_DURABILITY = 650;
 
         @Config.Name("Gilded Livingmetal Shield: Max Use Duration")
         public int GILDED_LIVINGMETAL_SHIELD_MAXUSEDURATION = 200;
