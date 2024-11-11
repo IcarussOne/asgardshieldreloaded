@@ -72,7 +72,7 @@ item.asr.golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 
 item.asr.blessed_golden_shield.perk=Special Perk: Paladin's Ward
-item.asr.blessed_golden_shield.perk.desc=Heals the wielder for two hearts plus 12 percent of the attacker's max health (30 percent chance)
+item.asr.blessed_golden_shield.perk.desc=Heals the wielder for two hearts plus 12 percent of the attacker's max health (40 percent chance)
 item.asr.blessed_golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.blessed_golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 

@@ -228,7 +228,7 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "blessed_golden_shield":
-                            if (RandomUtil.chance(0.3D) && player.shouldHeal() && enemy instanceof EntityLiving)
+                            if (RandomUtil.chance(0.4D) && player.shouldHeal() && enemy instanceof EntityLiving)
                             {
                                 // TODO: Spawn particles when player is healed
                                 // Two hearts + 12% of the attacker's max health
