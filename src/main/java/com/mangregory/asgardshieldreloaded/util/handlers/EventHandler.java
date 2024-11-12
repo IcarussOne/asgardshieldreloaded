@@ -216,25 +216,27 @@ public class EventHandler
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_LAND, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "golden_shield":
-                            if (RandomUtil.chance(0.2D) && player.shouldHeal() && enemy instanceof EntityLiving)
+                            knockback = 0.5F;
+                            if (RandomUtil.chance(0.2D) && player.shouldHeal() && enemy instanceof EntityLivingBase)
                             {
                                 // TODO: Spawn particles when player is healed
                                 // One heart + 8% of the attacker's max health
                                 player.heal(2 + ((EntityLivingBase) enemy).getMaxHealth() * 0.08F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
+                                if (((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD)) knockback = 1.0F;
                             }
-                            knockback = ((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD) ? 1.0F : 0.5F;
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "blessed_golden_shield":
-                            if (RandomUtil.chance(0.4D) && player.shouldHeal() && enemy instanceof EntityLiving)
+                            knockback = 0.75F;
+                            if (RandomUtil.chance(0.4D) && player.shouldHeal() && enemy instanceof EntityLivingBase)
                             {
                                 // TODO: Spawn particles when player is healed
                                 // Two hearts + 12% of the attacker's max health
                                 player.heal(4 + ((EntityLivingBase) enemy).getMaxHealth() * 0.12F);
                                 player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_INFECT, SoundCategory.PLAYERS, 2.0F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
+                                if (((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD)) knockback = 1.5F;
                             }
-                            knockback = ((EntityLivingBase) enemy).getCreatureAttribute().equals(EnumCreatureAttribute.UNDEAD) ? 1.5F : 0.75F;
                             player.getEntityWorld().playSound(null, player.getPosition(), SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR, SoundCategory.PLAYERS, 0.6F, 0.8F + player.getEntityWorld().rand.nextFloat() * 0.4F);
                             break;
                         case AsgardShieldReloaded.NAMESPACE + "diamond_shield":
