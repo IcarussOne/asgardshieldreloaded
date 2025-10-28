@@ -67,12 +67,12 @@ item.asr.gilded_ender_shield.weakness=Weakness: End Tech
 item.asr.gilded_ender_shield.weakness.desc=Ender folk can bypass the guard
 
 item.asr.golden_shield.perk=Special Perk: Paladin's Ward
-item.asr.golden_shield.perk.desc=Heals the wielder for one heart plus 8 percent of the attacker's max health (20 percent chance)
+item.asr.golden_shield.perk.desc=Heals the wielder for a heart and a half plus 10 percent of the attacker's max health (25 percent chance)
 item.asr.golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 
 item.asr.blessed_golden_shield.perk=Special Perk: Paladin's Ward
-item.asr.blessed_golden_shield.perk.desc=Heals the wielder for two hearts plus 12 percent of the attacker's max health (40 percent chance)
+item.asr.blessed_golden_shield.perk.desc=Heals the wielder for three hearts plus 20 percent of the attacker's max health (50 percent chance)
 item.asr.blessed_golden_shield.weakness=Weakness: Paladin's Oath
 item.asr.blessed_golden_shield.weakness.desc=Knockback is halved against non-undead attackers
 
